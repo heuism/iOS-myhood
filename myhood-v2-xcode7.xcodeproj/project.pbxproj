@@ -12,6 +12,11 @@
 		EBC06B3C1D44EDE6004BE98B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC06B3A1D44EDE6004BE98B /* Main.storyboard */; };
 		EBC06B3E1D44EDE6004BE98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC06B3D1D44EDE6004BE98B /* Assets.xcassets */; };
 		EBC06B411D44EDE6004BE98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC06B3F1D44EDE6004BE98B /* LaunchScreen.storyboard */; };
+		EBC06B4C1D44EE8A004BE98B /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC06B4B1D44EE8A004BE98B /* AddPostVC.swift */; };
+		EBC06B4E1D44EEA0004BE98B /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC06B4D1D44EEA0004BE98B /* CircleImageView.swift */; };
+		EBC06B501D44EEAD004BE98B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC06B4F1D44EEAD004BE98B /* Post.swift */; };
+		EBC06B521D44EEC7004BE98B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC06B511D44EEC7004BE98B /* PostCell.swift */; };
+		EBC06B551D44FC78004BE98B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC06B541D44FC78004BE98B /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		EBC06B3D1D44EDE6004BE98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC06B401D44EDE6004BE98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBC06B421D44EDE6004BE98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC06B4B1D44EE8A004BE98B /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		EBC06B4D1D44EEA0004BE98B /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		EBC06B4F1D44EEAD004BE98B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EBC06B511D44EEC7004BE98B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EBC06B541D44FC78004BE98B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		EBC06B351D44EDE6004BE98B /* myhood-v2-xcode7 */ = {
 			isa = PBXGroup;
 			children = (
+				EBC06B531D44FC69004BE98B /* Services */,
+				EBC06B4A1D44EE70004BE98B /* Controller */,
+				EBC06B491D44EE64004BE98B /* View */,
+				EBC06B481D44EE2D004BE98B /* Model */,
 				EBC06B361D44EDE6004BE98B /* AppDelegate.swift */,
-				EBC06B381D44EDE6004BE98B /* ViewController.swift */,
 				EBC06B3A1D44EDE6004BE98B /* Main.storyboard */,
 				EBC06B3D1D44EDE6004BE98B /* Assets.xcassets */,
 				EBC06B3F1D44EDE6004BE98B /* LaunchScreen.storyboard */,
 				EBC06B421D44EDE6004BE98B /* Info.plist */,
 			);
 			path = "myhood-v2-xcode7";
+			sourceTree = "<group>";
+		};
+		EBC06B481D44EE2D004BE98B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBC06B4F1D44EEAD004BE98B /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBC06B491D44EE64004BE98B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBC06B4D1D44EEA0004BE98B /* CircleImageView.swift */,
+				EBC06B511D44EEC7004BE98B /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EBC06B4A1D44EE70004BE98B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBC06B381D44EDE6004BE98B /* ViewController.swift */,
+				EBC06B4B1D44EE8A004BE98B /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EBC06B531D44FC69004BE98B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBC06B541D44FC78004BE98B /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC06B4E1D44EEA0004BE98B /* CircleImageView.swift in Sources */,
+				EBC06B551D44FC78004BE98B /* DataService.swift in Sources */,
 				EBC06B391D44EDE6004BE98B /* ViewController.swift in Sources */,
+				EBC06B4C1D44EE8A004BE98B /* AddPostVC.swift in Sources */,
 				EBC06B371D44EDE6004BE98B /* AppDelegate.swift in Sources */,
+				EBC06B501D44EEAD004BE98B /* Post.swift in Sources */,
+				EBC06B521D44EEC7004BE98B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
